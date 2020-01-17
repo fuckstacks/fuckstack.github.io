@@ -1,1 +1,22 @@
-theme: jekyll-theme-minimal
+title: Echo
+author: Echo
+email: Echo@eudemonia.com
+description: > 
+  Personal Blog of Echo
+
+baseurl: ""
+permalink: /:year/:month/:day/:title/
+lang: en # site language (en/ja/zh-Hans/zh-Hant)
+color_scheme: github
+
+github_username: echospage
+twitter_username: echospage
+instagram_username: echospage
+telegram_username: echospage
+disqus_shortname: echospage
+# Build settings
+markdown: kramdown
+# theme: jekyll-theme-kagami
+exclude:
+  - Gemfile
+  - Gemfile.lock
