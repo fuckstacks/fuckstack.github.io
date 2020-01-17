@@ -118,4 +118,4 @@ categories: Direction
 [github-download]: https://desktop.githubusercontent.com/releases/1.0.12-6fd0d962/GitHubDesktopSetup.exe
 [workmark-download]: https://github.com/wordmark/wordmark/releases/download/v2.2.5/WordMark-win32-x64.zip
 [markdown-learn]: https://www.jianshu.com/p/22ba695a7ce3
-[eudemonia-url]: http://eudemonia.xyz
+[eudemonia-url]: https://libsvg.com
