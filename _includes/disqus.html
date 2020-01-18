@@ -1,17 +1,16 @@
 <div id="disqus_thread"></div>
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-  var disqus_config = function () {
-    this.page.url = '{{ page.url | absolute_url }}';
-    this.page.identifier = '{{ page.url | absolute_url }}';
-  };
-
-  (function() {
-    var d = document, s = d.createElement('script');
-
-    s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
-
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
+var gitment = new Gitment({
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'errnull',
+  repo: 'libsvg talk',
+  oauth: {
+    client_id: '2a95d43f78c5d8bfda21',
+    client_secret: '4700b79ce50f04c28d880389c92dcbfab6ba91a3',
+  },
+})
+gitment.render('container')
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
