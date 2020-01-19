@@ -1,14 +1,17 @@
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
 <script>
-var gitment = new Gitment({
-  owner: 'errnull',
-  repo: 'Libsvg talk',
-  oauth: {
-    client_id: '2a95d43f78c5d8bfda21',
-    client_secret: '4700b79ce50f04c28d880389c92dcbfab6ba91a3',
-  },
+  const gitalk = new Gitalk({
+  clientID: 'd294f70de77d5a1a098f',
+  clientSecret: '01b5e55fc49f09bdd97b9454a36ba97371dfda6e',
+  repo: 'libsvg.org',
+  owner: 'libsvg',
+  admin: ['errnull'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
 })
-gitment.render('container')
+
+gitalk.render('gitalk-container')
+
 </script>
